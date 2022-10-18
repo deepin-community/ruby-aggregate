@@ -1,0 +1,49 @@
+ruby-aggregate (0.2.3-1) unstable; urgency=medium
+
+  * New upstream version 0.2.3
+  * Switch d/watch to point to g/h tarball
+  * Drop d/patches as they're merged upstream
+  * Bump dh-compat to 13
+
+ -- Utkarsh Gupta <utkarsh@debian.org>  Wed, 13 May 2020 07:05:39 +0530
+
+ruby-aggregate (0.2.2-3) unstable; urgency=medium
+
+  [ Cédric Boutillier ]
+  * Use https:// in Vcs-* fields
+  * Use https:// in Vcs-* fields
+  * Bump Standards-Version to 3.9.7 (no changes needed)
+
+  [ Utkarsh Gupta ]
+  * Add salsa-ci.yml
+  * Fix package wrt cme
+  * Add Rules-Requires-Root: no
+  * Drop runtime dependency on ruby interpreter
+  * Fix insecure link
+  * Add patch to fix autopkgtest
+
+ -- Utkarsh Gupta <utkarsh@debian.org>  Thu, 02 Apr 2020 23:05:13 +0530
+
+ruby-aggregate (0.2.2-2) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Christian Hofstaedtler ]
+  * Refresh packaging with dh-make-ruby -w
+
+  [ Hleb Valoshka ]
+  * Bump Standards-Version to 3.9.5 (no changes).
+  * Remove obsoleted DM-Upload-Allowed.
+  * Use current copyright format.
+  * Update Vcs-* fields to use anonscm.debian.org.
+  * Use Expat as a license name instead of MIT.
+  * Rebuild against newer gem2deb (adds gemspec for all interpreters, current
+    and future).
+
+ -- Christian Hofstaedtler <zeha@debian.org>  Tue, 18 Aug 2015 14:22:14 +0000
+
+ruby-aggregate (0.2.2-1) unstable; urgency=low
+
+  * Initial release (Closes: #660343)
+
+ -- Hleb Valoshka <375gnu@gmail.com>  Sat, 18 Feb 2012 17:04:22 +0300

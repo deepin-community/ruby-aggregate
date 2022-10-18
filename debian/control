@@ -1,0 +1,28 @@
+Source: ruby-aggregate
+Maintainer: Debian Ruby Extras Maintainers <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
+Uploaders: Hleb Valoshka <375gnu@gmail.com>,
+           Utkarsh Gupta <utkarsh@debian.org>
+Section: ruby
+Testsuite: autopkgtest-pkg-ruby
+Priority: optional
+Build-Depends: debhelper-compat (= 13),
+               gem2deb
+Standards-Version: 4.5.0
+Vcs-Browser: https://salsa.debian.org/ruby-team/ruby-aggregate
+Vcs-Git: https://salsa.debian.org/ruby-team/ruby-aggregate.git
+Homepage: https://github.com/josephruscio/aggregate
+XS-Ruby-Versions: all
+Rules-Requires-Root: no
+
+Package: ruby-aggregate
+Architecture: all
+XB-Ruby-Versions: ${ruby:Versions}
+Depends: ${misc:Depends},
+         ${shlibs:Depends}
+Description: Ruby class for accumulating aggregate statistics
+ Aggregate is an intuitive ruby implementation of a statistics aggregator
+ including both default and configurable histogram support. It does this
+ without recording/storing any of the actual sample values, making it
+ suitable for tracking statistics across millions/billions of samples
+ without any impact on performance or memory footprint. Originally
+ inspired by the Aggregate support in SystemTap.
